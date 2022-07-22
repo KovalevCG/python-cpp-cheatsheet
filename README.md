@@ -1,6 +1,6 @@
 ## Python/C++ Sintax Cheat Sheet
 
-
+<!-------------------------------------------------------- COMMENTS -------------------------------------------------------------->
 ### Comments
 ```C++
 // C++
@@ -19,13 +19,26 @@ multi-line comment */
 # multi-line comment
 ```
 
+<!-------------------------------------------------------- VARIABLES -------------------------------------------------------------->
 ### Variables
-
+```C++
+// C++
+int age = 18;
+int a[10];
+```
+```Python
+# Python
+age = 18
+a = []
+```
+<!--
 |  C++ |  Python |
 | ------------ | ------------ |
 | int age = 18; | age = 18 |
 |int a[10];  | a = [] |
+-->
 
+<!-------------------------------------------------------- IF ELSE -------------------------------------------------------------->
 ### If Statement
 ```C++
 // C++
@@ -51,6 +64,44 @@ else:
     print("a > 10")
 ```
 
+<!-------------------------------------------------------- TERNARY -------------------------------------------------------------->
+### Ternary operator
+```C++
+// C++
+string result = (time < 18) ? "Good day." : "Good evening.";
+```
+```Python
+# Python
+result = "Good day." if time < 18 else "Good evening."
+```
+
+<!-------------------------------------------------------- SWITCH -------------------------------------------------------------->
+### Switch statement
+```C++
+// C++
+
+switch(day){
+  case 6:
+    cout << "Today is Saturday";
+    break;
+  case 7:
+    cout << "Today is Sunday";
+    break;
+  default:
+    cout << "Looking forward to the Weekend";
+}
+```
+```Python
+# Python
+
+match day:
+    case 6: print("Today is Saturday")
+    case 7: print("Today is Sunday")
+    case default: print("Looking forward to the Weekend")
+
+```
+
+<!-------------------------------------------------------- WHILE LOOP -------------------------------------------------------------->
 ### While Loop
 ```C++
 // C++
@@ -69,6 +120,8 @@ while i < 5:
     print(i)
     i += 1
 ```
+
+<!-------------------------------------------------------- FOR LOOP -------------------------------------------------------------->
 ### For Loop
 ```C++
 // C++
